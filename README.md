@@ -17,6 +17,14 @@ This is a bare bones Drupal site with the required configuration and modules to 
 - Run `lando drush cr` to clear caches.
 - Done! We don't need to unpack dependencies.
 
+## Install Custom Standard Recipe
+- Go to the `web` directory.
+- Run `lando php core/scripts/drupal recipe core/recipes/contrib/custom_standard` to install the custom standard recipe.
+- Run `lando drush cr` to clear caches.
+- Go back to your `composer.json` root directory.
+- Run `composer unpack fourkitchens/custom_standard` to unpack dependencies.
+- Done!
+
 ## Recipe install on top of minimal profile issue
 Currently, if you install a recipe on top of a site with the `Minimal` profile, there will be a duplication of theme blocks. This is a [known issue](https://www.drupal.org/project/distributions_recipes/issues/3436143). The issue is due to another [Core issue that has been documented](https://www.drupal.org/project/drupal/issues/3105597).
 To sum it up, this results from Drupal core cloning the blocks of the current theme when a new theme is enabled. Since the recipe is installed on top of `Minimal`, then blocks from the `Stark` theme are duplicated into the admin and frontend themes.

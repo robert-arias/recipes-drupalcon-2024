@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5d20f568feb256924f36f4d508603dd",
+    "content-hash": "2bc3b0d9a39bea8ae122503684cb3340",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1847,6 +1847,41 @@
             "time": "2023-11-08T12:14:14+00:00"
         },
         {
+            "name": "fourkitchens/custom_standard",
+            "version": "dev-custom-recipe",
+            "dist": {
+                "type": "path",
+                "url": "web/recipes/contrib/custom_standard",
+                "reference": "8e7ebf8ddb7f48529a4521207938b675035126f2"
+            },
+            "require": {
+                "drupal/default_content": "^2.0@alpha"
+            },
+            "type": "drupal-recipe",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Laura Johnson",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Robert Arias",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A clone of core standard recipe with slightly different config.",
+            "keywords": [
+                "Drupal recipes",
+                "drupal recipe",
+                "recipe"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "grasmash/expander",
             "version": "3.0.0",
             "source": {
@@ -3469,37 +3504,6 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
-        },
-        {
-            "name": "robert-arias/custom_standard",
-            "version": "dev-custom-recipe",
-            "dist": {
-                "type": "path",
-                "url": "web/recipes/contrib/custom_standard",
-                "reference": "8299056b370ad4ec4f8ed8e649d8ca4dab2af55b"
-            },
-            "require": {
-                "drupal/default_content": "^2.0@alpha"
-            },
-            "type": "drupal-recipe",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Robert Arias",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "A clone of core standard recipe with slightly different config.",
-            "keywords": [
-                "Drupal recipes",
-                "drupal recipe",
-                "recipe"
-            ],
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "sebastian/diff",

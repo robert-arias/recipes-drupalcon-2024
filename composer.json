@@ -30,8 +30,8 @@
         "drupal/core-recommended": "^10.3",
         "drush/drush": "^12.5",
         "ewcomposer/unpack": "dev-master",
-        "oomphinc/composer-installers-extender": "^2.0",
-        "robert-arias/custom_standard": "dev-custom-recipe"
+        "fourkitchens/custom_standard": "dev-custom-recipe",
+        "oomphinc/composer-installers-extender": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "^10.3"
