@@ -1,0 +1,4 @@
+name: distributions-and-recipes-drupalcon-2024
+recipe: drupal10
+config:
+  webroot: ./web
