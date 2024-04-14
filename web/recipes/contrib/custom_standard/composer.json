@@ -12,6 +12,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "drupal/default_content": "*"
+        "drupal/default_content": "^2.0@alpha"
     }
 }
