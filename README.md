@@ -13,7 +13,8 @@ This is a bare bones Drupal site with the required configuration and modules to 
 
 ## Install Standard Recipe
 - Go to the `web` directory.
-- Run `lando php core/scripts/drupal recipe core/recipes/standard`
+- Run `lando php core/scripts/drupal recipe core/recipes/standard` to install the standard recipe.
+- Run `lando drush cr` to clear caches.
 - Done! We don't need to unpack dependencies.
 
 ## Recipe install on top of minimal profile issue
