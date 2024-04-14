@@ -1,0 +1,17 @@
+{
+    "name": "robert-arias/custom_standard",
+    "description": "A clone of core standard recipe with slightly different config.",
+    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Robert Arias",
+            "role": "Maintainer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/default_content": "*"
+    }
+}
