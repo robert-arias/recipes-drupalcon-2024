@@ -16,6 +16,10 @@
         {
             "type": "vcs",
             "url": "git@github.com:woredeyonas/Drupal-Recipe-Unpack.git"
+        },
+        {
+            "type": "path",
+            "url": "web/recipes/contrib/custom_standard"
         }
     ],
     "require": {
@@ -26,7 +30,8 @@
         "drupal/core-recommended": "^10.3",
         "drush/drush": "^12.5",
         "ewcomposer/unpack": "dev-master",
-        "oomphinc/composer-installers-extender": "^2.0"
+        "oomphinc/composer-installers-extender": "^2.0",
+        "robert-arias/custom_standard": "dev-custom-recipe"
     },
     "require-dev": {
         "drupal/core-dev": "^10.3"
@@ -92,21 +97,6 @@
             "include-keys": [
                 "homepage",
                 "support"
-            ],
-            "post-create-project-cmd-message": [
-                "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
-                "<bg=blue;fg=white>                                                         </>",
-                "",
-                "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/installing-drupal",
-                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-                "  * Get support: https://www.drupal.org/support",
-                "  * Get involved with the Drupal community:",
-                "      https://www.drupal.org/getting-involved",
-                "  * Remove the plugin that prints this message:",
-                "      composer remove drupal/core-project-message"
             ]
         },
         "patches": {
