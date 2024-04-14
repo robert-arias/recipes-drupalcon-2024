@@ -114,7 +114,7 @@ config:
         - 'edit own comments'
         - 'create terms in tags'
         - 'edit terms in tags'
-    user.role.anonymous:
+    user.role.*:
       grantPermissions:
         # This recipe assumes all published content should be publicly accessible.
         - 'access content'
