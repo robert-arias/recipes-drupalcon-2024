@@ -129,3 +129,5 @@ node_modules/
 *.tar
 *.zip
 *.tgz
+
+.vscode/
