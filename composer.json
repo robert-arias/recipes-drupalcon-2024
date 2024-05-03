@@ -101,7 +101,8 @@
         },
         "patches": {
             "drupal/core": {
-                "Allow recipes to be applied": "https://git.drupalcode.org/project/distributions_recipes/-/raw/patch/recipe-10.3.x.patch"
+                "Allow recipes to be applied": "https://git.drupalcode.org/project/distributions_recipes/-/raw/patch/recipe-10.3.x.patch",
+                "Use MySQL database instead of SQLite in install command": "patches/install-command-mysql-driver.patch"
             }
         },
         "installer-types": [

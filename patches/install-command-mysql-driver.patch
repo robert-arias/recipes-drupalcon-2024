@@ -1,0 +1,22 @@
+diff --git a/core/lib/Drupal/Core/Command/InstallCommand.php b/core/lib/Drupal/Core/Command/InstallCommand.php
+index 1c00717cfb..e4c6ff78d3 100644
+--- a/core/lib/Drupal/Core/Command/InstallCommand.php
++++ b/core/lib/Drupal/Core/Command/InstallCommand.php
+@@ -172,9 +172,14 @@ protected function install($class_loader, SymfonyStyle $io, $profile, $langcode,
+       ],
+       'forms' => [
+         'install_settings_form' => [
+-          'driver' => 'sqlite',
+-          'sqlite' => [
+-            'database' => $site_path . '/files/.sqlite',
++          'driver' => 'Drupal\\mysql\\Driver\\Database\\mysql',
++          'Drupal\\mysql\\Driver\\Database\\mysql' => [
++            'database' => 'drupal10',
++            'username' => 'drupal10',
++            'password' => 'drupal10',
++            'prefix' => '',
++            'host' => 'database',
++            'port' => '3306',
+           ],
+         ],
+         'install_configure_form' => [
